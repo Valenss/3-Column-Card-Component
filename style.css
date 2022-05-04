@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+}
+
+.card-container{
+    flex-direction: row;
+    max-width: 840px;
+    display: grid;
+	grid-template-columns: repeat(3, 0.4fr);
+}
+
+.card{
+    padding: 2rem;
+    background-color: coral;
+}
+
+.title{
+    font-family: 'Big Shoulders Display', cursive; 
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 2rem;
+}
+
+.description{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin-bottom: 4.5rem;
+}
+
+.button{
+    background-color: hsl(0, 0%, 95%);
+    padding: .8rem 1.6rem;
+    border-radius: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-flex;    
+    
+}
+
+.first-card{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.first-button{
+    color:  hsl(31, 77%, 52%);
+    cursor: pointer;
+}
+.first-button:hover{
+    transition: .3s;
+    color:  hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.second-card{
+    background-color:hsl(184, 100%, 22%);
+}
+
+.second-button{
+    color:  hsl(184, 100%, 22%);
+    cursor: pointer;
+}
+.second-button:hover{
+    transition: .3s;
+    color:  hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.third-card{
+    background-color:  hsl(179, 100%, 13%);
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.third-button{
+    color:  hsl(179, 100%, 13%);
+    cursor: pointer;
+}
+.third-button:hover{
+    transition: .3s;
+    color:  hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+
+
+@media screen and (max-width:600px) {
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+    }    
+    main{
+        height: auto;
+    }
+
+    .button{
+       margin-bottom: 1rem; 
+    }
+
+    .first-card{
+     border-radius: .5rem .5rem 0 0;   
+    }
+
+    .third-card{
+        border-radius: 0 0 .5rem .5rem;   
+    }
+   
+}
