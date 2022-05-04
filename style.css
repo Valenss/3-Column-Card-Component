@@ -4,7 +4,7 @@
 body{
     background-color: hsl(0, 0%, 95%);
 }
-/* jhjh */
+
 main{
     display: flex;
     align-items: center;
@@ -16,6 +16,7 @@ main{
     flex-direction: row;
     max-width: 840px;
     display: grid;
+    height: 500px;
 	grid-template-columns: repeat(3, 0.4fr);
 }
 
@@ -48,7 +49,7 @@ main{
     text-decoration: none;
     font-size: 15px;
     display: inline-flex;    
-    
+    margin-top: 3rem;
 }
 
 .first-card{
